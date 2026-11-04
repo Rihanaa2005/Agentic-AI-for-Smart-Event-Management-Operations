@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy - EventOps AI{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <!-- Header section -->
+            <div class="border-bottom pb-4 mb-4">
+                <h1 class="display-5 fw-bold text-dark">Privacy Policy</h1>
+                <p class="text-muted mb-0">Last updated: October 16, 2026</p>
+            </div>
+
+            <p class="lead text-secondary mb-5">
+                At EventOps AI, we value your trust and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data when you use our event management platform.
+            </p>
+
+            <!-- Section 1 -->
+            <div class="mb-4">
+                <h3 class="h4 text-dark fw-semibold">1. Information We Collect</h3>
+                <p>To provide a smooth event management experience, we collect the following types of information:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Your name, email address, and hashed passwords when you register an account.</li>
+                    <li><strong>Event Operations Data:</strong> Information regarding your event registrations, ticket types, attendance tracking, and check-in status.</li>
+                    <li><strong>Interactive Features:</strong> Feedback, ratings, and comments you submit regarding events, as well as inquiries submitted via our contact forms.</li>
+                    <li><strong>Platform Logs:</strong> Operational records created during your use of our AI Assistant, automated reminders, and system incident logs.</li>
+                </ul>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="mb-4">
+                <h3 class="h4 text-dark fw-semibold">2. How We Use Your Information</h3>
+                <p>We use the gathered information to manage your account and maintain platform operations, specifically to:</p>
+                <ul>
+                    <li>Process your event registrations, assign ticket types, and manage venue capacity allocations.</li>
+                    <li>Power the EventOps AI Assistant to answer your queries regarding venues, speakers, and personal tickets.</li>
+                    <li>Dispatch scheduled event reminders and platform notifications via email or system updates.</li>
+                    <li>Monitor, track, and resolve system incidents or operational disruptions.</li>
+                    <li>Analyze aggregated attendee feedback to help event organizers improve future session quality.</li>
+                </ul>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="mb-4">
+                <h3 class="h4 text-dark fw-semibold">3. Data Security</h3>
+                <p>
+                    We implement industry-standard security protocols to protect your personal data. Passwords are securely hashed using cryptographic salts before storage, preventing unauthorized system access. Additionally, administrative dashboard interfaces and analytical tools are tightly restricted, ensuring only authorized platform administrators can view complete registration lists or incident logs.
+                </p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="mb-4">
+                <h3 class="h4 text-dark fw-semibold">4. Data Sharing and Third Parties</h3>
+                <p>
+                    We do not sell your personal data. Information is processed strictly within the infrastructure of EventOps AI. Queries processed through our AI Assistant are securely transmitted to the underlying Large Language Model provider solely to evaluate and respond to your active commands.
+                </p>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="mb-4">
+                <h3 class="h4 text-dark fw-semibold">5. Your Control & Privacy Rights</h3>
+                <p>You maintain full control over your operational event footprint. You have the right to:</p>
+                <ul>
+                    <li>Review, modify, or update your registered account details at any time.</li>
+                    <li>Cancel active event registrations or alter your ticket types directly through your personal dashboard.</li>
+                    <li>Update, replace, or remove individual session feedback entries you have submitted.</li>
+                </ul>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="mb-5">
+                <h3 class="h4 text-dark fw-semibold">6. Contact Us</h3>
+                <p>
+                    If you have any questions about this Privacy Policy or how your operational data is handled, please reach out to us directly through our system's <a href="{{ url_for('contact') }}">Contact Page</a>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
